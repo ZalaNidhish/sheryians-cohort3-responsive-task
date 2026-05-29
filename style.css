@@ -1,0 +1,1090 @@
+@font-face {
+    font-family: reckless;
+    src: url("./assets/RecklessCondensedS-TRIAL-Book.woff");
+}
+@font-face {
+    font-family: fitgree;
+    src: url("./assets/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2");
+}
+
+@font-face {
+    font-family: midnight;
+    src: url(./assets/midnight-sans-rd-12-semibold-trial.otf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(./assets/RobotoMono-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #FBF9EB;
+
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+    font-family: helvetica;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+}
+
+nav .part-1{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 4vh;
+    font-size: 1.2rem;
+    font-family: reckless;
+}
+
+nav .part-1 i{
+    display: inline-block;
+    background-color: #C0DBFF;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    border: 1px solid black;
+    transition: all .2s ease;
+}
+
+nav .part-1 i:hover{
+    background-color: #FFB500;
+    transform: rotate(180deg);
+}
+
+nav .part-1 h2 i{
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+#reviews-logo{
+    background-color: transparent;
+    color: #FFB500;
+    font-size: 1.2rem;
+    border: none;
+}
+
+#reviews-logo:hover{
+    transform: none;
+}
+
+nav .part-1 h2{
+    display: none;
+}
+
+nav .part-3{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4vh;
+    font-size: 0.6rem;
+}
+
+.section-1{
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp");
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    padding: 4vw;
+    color: white;
+    gap: 2vh;
+    position: relative;
+}
+
+.section-1 h1{
+    font-family: reckless;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.section-1 p{
+    font-family: fitgree;
+}
+
+.btn{
+    padding: 2vh 4vw;
+    border-radius: 40px;
+    font-size: 1rem;
+    color: white;
+    background-color: #2A2857;
+    transition: all .2s ease;
+    border: 1px solid black;
+}
+
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.btn1{
+    padding: 2vh 4vw;
+    border-radius: 40px;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    transition: all .2s ease;
+    border: 1px solid black;
+}
+
+.btn1:hover{
+    color: white;
+    background-color: #2A2857;
+}
+
+
+.section-1 .down{
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    background-color: #2A2857;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    right: 5vw;
+}
+
+.section-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    padding: 4vw;
+    border-bottom: 1px solid black;
+}
+
+.section-2 h1{
+    font-family: reckless;
+    text-align: center;
+    width: 40vw;
+    display: inline-block;
+    align-self: center;
+    font-weight: 100;
+    margin-top: 10vh;
+}
+
+.comic{
+    white-space: nowrap;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0px 4px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #DAAEEA;
+    transform: rotate(-2deg);
+    margin-top: 10vh;
+    font-family: midnight;
+}
+
+.scroller{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 4vh;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+
+.section-2 .scroller .card-container{
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 2vh;
+    height: 90vh;
+    flex-shrink: 0;
+}
+
+.section-2 .scroller .card-container h2{
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: capitalize;
+    font-family: reckless;
+}
+
+.section-2 .scroller .card-container h4{
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: capitalize;
+    font-family: fitgree;
+}
+
+.section-2 .scroller .card-container p{
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: rgb(70, 70, 70);
+    width: 80%;
+    font-family: fitgree;
+}
+
+.section-2 .scroller .card{
+    height: 60vh;
+    width: 100%;
+    border-radius: 2vh;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.section-2 .scroller .card-container:nth-child(1) .card { background: #a8d8a8; }
+.section-2 .scroller .card-container:nth-child(2) .card { background: #f5d485; }
+.section-2 .scroller .card-container:nth-child(3) .card { background: #7ecfb3; }
+.section-2 .scroller .card-container:nth-child(4) .card { background: #a8d4e8; }
+
+.section-2 .scroller .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.section-2 .scroller .card-container:hover img{
+    transform: scale(1.1);
+}
+
+.section-2 .scroller .card #add{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    text-align: center;
+    padding: 0.5vh 2vh;
+    border-radius: 1vh;
+    transform: translate(-20%, -20%);
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    transition: all .2s ease;
+    font-family: fitgree;
+    font-weight: 100;
+}
+
+.section-2 .scroller .card #add:hover{
+    background-color: #2A2857;
+    color: white;
+}   
+
+#plus{
+    font-size: 1.6rem;
+}
+
+.section-2 .scroller .card::before{
+    content: attr(title);
+    padding: 0.5vh;
+    font-size: 1.4rem;
+    font-family: midnight;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10%, 45%);
+    border-radius: 1vh;
+}
+
+.section-2 .scroller .card::after{
+    content: attr(rating);
+    padding: 1vh;
+    color: black;
+    font-size: 0.8rem;
+    font-family: fitgree;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-10%, 45%);
+    border-radius: 1vh;
+}
+
+.section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 6vh;
+    padding: 16vh;
+}
+
+.section-3 .comic{
+    background-color: #FF7F31;
+}
+
+.section-3 h1{
+    font-size: 4rem;
+    width: 100%;
+    font-family: reckless;
+    font-weight: 300;
+}
+
+.section-3 input{
+    padding: 4vh 6vh;
+    border-radius: 10px;
+    width: 70vh;
+    font-size: 2rem;
+    font-weight: 200;
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+.section-3 p{
+    margin-top: 14vh;
+    font-family: fitgree;
+}
+
+.section-3 .categories{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh;
+}
+
+.section-3 .categories h2{
+    text-transform: capitalize;
+    font-weight: 200;
+    font-family: reckless;
+    font-size: 1.8rem;
+    background-color: #DAEAFF;
+    border: 1px solid black;
+    color: black;
+    border-radius: 10px;
+    padding: 2vh;
+    cursor: pointer;
+}
+
+.section-3 .categories h2:hover{
+    background-color: #A2C9FC;
+}
+
+.section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 4vh;
+    gap: 8vh;
+    overflow: hidden;
+}
+
+.section-4 .comic{
+    background-color: #73BC25;
+    margin-left: 16vh;
+    font-size: 4rem;
+}
+
+.section-4 .scroller .card:nth-child(1){--clr: #F5AF8A; --inner:#EA6D44;}
+.section-4 .scroller .card:nth-child(2){--clr: #ABDF74; --inner:#73BC25;}
+.section-4 .scroller .card:nth-child(3){--clr: #FFD265; --inner:#FFB500;}
+.section-4 .scroller .card:nth-child(4){--clr: #BDE674; --inner:#8BC045;}
+.section-4 .scroller .card:nth-child(5){--clr: #D9C2E1; --inner:#C790DB;}
+
+
+.section-4 h1{
+    font-family: reckless;
+    font-weight: 100;
+    padding-left: 16vh;
+    font-size: 4rem;
+}
+
+.section-4 .scroller .card{
+    height: 60vh;
+    width: 45vh;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: var(--clr);
+    flex-shrink: 0;
+}
+
+.section-4 .scroller .card .texts{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2vh;
+}
+
+.section-4 .scroller .card .texts h3{
+    font-weight: 100;
+    font-size: 1.4rem;
+    font-family: reckless;
+}
+
+.section-4 .scroller .card .texts p{
+    font-weight: 200;
+    color: rgb(62, 62, 62);
+    font-family: fitgree;
+}
+
+.section-4 .scroller .card .teatype{
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    height: 30%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vh;
+    background: var(--inner);
+    font-family: roboto;
+    font-weight: 100;
+
+}
+
+.section-4 .scroller .card .teatype .img{
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid black;
+}
+
+.section-4 .scroller .card .teatype .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.section-4 .scroller .card .teatype h5{
+    height: 100%;
+    align-content: center;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.section-4 .scroller .card .teatype .shop{
+    height: 100%;
+    align-content: center;
+}
+
+.section-4 .scroller .card .teatype .shop h3{
+    color: black;
+    background-color: white;
+    padding: 8px;
+    border-radius: 20px;
+    width: fit-content;
+    font-weight: 200;
+}
+
+.section-5{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 4vh;
+    gap: 4vh;
+    width: 100%;
+
+}
+
+.section-5 .comic{
+    background-color: #FFB500;
+    font-size: 3rem;
+    border-radius:4px;
+    padding: 0 0.5vh;
+    margin-right: 16vh;
+}
+
+.section-5 h1{
+    font-family: reckless;
+    font-style: 5rem;
+    font-weight: 100;
+    margin-right: 16vh;
+    width: 80%;
+}
+
+.section-5 .scroller .card{
+    height: 60vh;
+    width: 50vh;
+    background-color: #2A2857;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.section-5 .scroller .card::before{
+    content: attr(type);
+    padding: 1vh 2vh;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(20%, 40%);
+}
+
+.section-5 .scroller .card .text{
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 200;
+    height: 10vh;
+    background-color: #C0DBFF;
+}
+
+.section-5 .scroller .card .img{
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-5 .scroller .card .img img{
+    height: 100%;
+    object-fit: contain;
+}
+
+.section-5 .btn{
+    align-self: center;
+}
+
+.section-6{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-6 .left{
+    height: 100%;
+    width: 50%;
+}
+
+.section-6 .left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-6 .right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    background-color: #2A2857;
+    padding: 12vh;
+}
+
+.section-6 .right h1{
+    font-size: 5rem;
+    width: 70%;
+    color: white;
+    font-family: reckless;
+    font-weight: 100;
+}
+
+.section-6 .right p{
+    color: white;
+    font-family: fitgree;
+    font-size: 1.4rem;
+}
+
+.section-6 .right .btn{
+    background-color: white;
+    color: black;
+}
+
+.section-7{
+    background-color: #9F6429;
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 4vh;
+    padding: 4vh;
+    color: white;
+
+}
+
+.section-7>.comic{
+    background-color: #FFCB96;
+    color: black;
+}
+
+.section-7>h1{
+    font-size: 5rem;
+    font-family: midnight;
+    font-weight: 800;
+}
+
+.section-7>p{
+    font-family: roboto;
+    margin-bottom: 10vh;
+}
+
+.section-7 .card{
+    display: flex;
+    gap: 10vh;
+    background-color: #FFCB96;
+    border-radius: 10px;
+    width: 100%;
+    padding: 2vh;
+    color: black;
+    border: 1px solid black;
+    height: 100%;
+}
+
+.section-7 .card .left{
+    height: 100%;
+    width: 50%;
+    align-content: center;
+}
+
+.section-7 .card .right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 4vh;
+}
+
+.section-7 .card .right .comic{
+    background-color: #F09F54;
+    font-style: 1rem;
+    border-radius: 4px;
+}
+
+.section-7 .card .right h1{
+    font-family: reckless;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.section-7 .card .right p{
+    font-family: fitgree;
+    width: 80%;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.section-7 .right .btn{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.mega-menu{
+    width: 100%;
+    padding: 40px;
+}
+
+.menu-container{
+    background: #2c2866;
+    border-radius: 10px;
+    padding: 45px 40px 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.menu-column h3{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    font-family: Georgia, serif;
+    font-weight: 500;
+}
+
+.menu-column ul{
+    list-style: none;
+}
+
+.menu-column ul li{
+    color: #b6b4cb;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-column ul li:hover{
+    color: white;
+    transform: translateX(4px);
+}
+
+.bottom-column{
+    margin-top: 40px;
+}
+
+.footer{
+    background-color: #C0DBFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    padding: 16vh 0vh;
+    width: 100%;
+}
+
+#unknown{
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+}
+
+#known{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 20vw;
+}
+
+.footer>div input{
+    padding: 2vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50vh;
+}
+
+.footer>div .socials{
+    display: flex;
+    gap: 2vh;
+}
+
+.footer>div .socials a{
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    color: black;
+    padding: 1vh;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.copyright{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.copyright .logo img{
+    height: 15vh;
+}
+
+.copyright .bg img{
+    height: 40vh;
+}
+
+.copyright .cprt{
+    text-align: center;
+    font-size: 14px;
+}
+
+.copyright .cprt a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.orange{
+    height: 100vh;
+    width: 100%;
+    background: url("https://www.twoleavestea.com/cdn/shop/files/1440.webp");
+    background-position: top;
+    background-size: cover;
+    padding: 8vh;
+}
+
+.orange .form{
+    height: 100%;
+    border-radius: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 4vh;
+    background-color: #F26412;
+    color: white;
+}
+
+.green{
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp);
+    background-size: cover;
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.green .part{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.orange .form h1{
+    font-size: 3rem;
+    width: 90%;
+}
+
+.orange .form div p{
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.orange .form div .btn{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    width: 50%;
+    font-size: 0.8rem;
+    padding: 2vh;
+}
+
+.orange .form div{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+
+@media (max-width: 400px){
+    .menu-container{
+        grid-template-columns: repeat(auto-fill);
+    }
+}
+
+@media (max-width: 768px){
+
+    .section-1 .down{
+        height: 6vh;
+        width: 6vh;
+        font-size: 1rem;
+    }
+
+    .section-1 .btn{
+        margin-bottom: 2vh;
+    }
+
+    .section-2 .btn{
+        align-self: center;
+        border-radius: 40px;
+        padding: 12px 2vh;
+    }
+
+    .section-2 h1{
+        width: 95%;
+    }
+
+    .section-3 h1{
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+    .menu-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+
+    nav{
+        padding: 1vh 4vh;
+    }
+
+    nav .part-1 h3{
+        display: none;
+    }
+
+    nav .part-1 h2{
+        display: initial;
+    }
+    nav .part-3 h3{
+        display: none;
+    }
+
+    .section-1{
+        background-image: url("https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp");
+        background-position: 40% 50%;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 4vw;
+        gap: 2vh;
+    }
+
+    .section-1 h1{
+        text-align: center;
+        font-weight: 200;
+        width: 100%;
+    }
+
+    .section-1 p{
+        text-align: center;
+    }
+
+    .section-1 .btn{
+        width: 100%;
+    }
+
+    .section-2{
+        align-items: start;
+    }
+
+    .section-2 h1{
+        text-align: center;
+        padding: 2vh;
+        width: 70%;
+    }
+
+    .section-2 .comic{
+        font-size: 3rem;
+        margin-block: 4vh;
+    }
+
+    .section-3{
+        padding: 4vh;
+    }
+
+    .section-3 input{
+        width: 90vw;
+        align-self: center;
+        font-size: 1.6rem;
+        padding: 4vh;
+    }
+
+    .section-4 .comic{
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    .section-4 h1{
+        display: none;
+    }
+
+    .section-6{
+        flex-direction: column;
+        height: 120vh;
+        margin-top: 10vh;
+    }
+
+    .section-6 .left{
+        width: 100%;
+        height: 40%
+    }
+
+    .section-6 .right{
+        width: 100%;
+        height: 40%;
+        align-items: center;
+        gap: 4vh;
+        padding: 2vh;
+    }
+
+    .section-6 .right h1{
+        font-size: 3rem;
+        text-align: center;
+        width: 35%;
+    }
+
+    .section-6 .right p{
+        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    .section-6 .right button{
+        width: 35%;
+    }
+
+    .section-7 .card{
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .section-7 .card .left{
+        height: 50%;
+        width: 100%;
+    }
+
+    .section-7 .card .right{
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        gap: 2vh;
+    }
+
+    .section-7 .card .right h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .section-7 .card .right p{
+        width: 50%;
+        text-align: center;
+    }
+
+}
