@@ -1163,7 +1163,7 @@ nav .part-3{
 
 
     .section-7{
-        height: 150vh;
+        height: 120vh;
     }
 
     .section-7>h1{
@@ -1173,6 +1173,7 @@ nav .part-3{
     .section-7 .card{
         flex-direction: column;
         gap: 4vh;
+        height: fit-content;
     }
 
     .section-7 .card .left{
