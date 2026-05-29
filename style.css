@@ -688,6 +688,7 @@ nav .part-3{
     height: 100%;
     width: 50%;
     align-content: center;
+    justify-content: center;
 }
 
 .section-7 .card .right{
@@ -1160,19 +1161,28 @@ nav .part-3{
         width: 35%;
     }
 
+
+    .section-7{
+        height: 120vh;
+    }
+
+    .section-7>h1{
+        font-size: 3rem;
+    }
+
     .section-7 .card{
         flex-direction: column;
         gap: 4vh;
     }
 
     .section-7 .card .left{
-        height: 50%;
         width: 100%;
+        display: none;
     }
 
     .section-7 .card .right{
         align-items: center;
-        height: 50%;
+        height: 100%;
         width: 100%;
         gap: 2vh;
     }
